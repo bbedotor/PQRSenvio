@@ -1,0 +1,99 @@
+﻿@model PQRSenvio.Web.Data.Entities.Case
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Case</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.category_id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.category_id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.theme_id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.theme_id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.detail_id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.detail_id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.assigned_user_id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.assigned_user_id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ans)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ans)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.account_id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.account_id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.created_at)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.created_at)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.created_by_id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.created_by_id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.modified_at)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.modified_at)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.modified_by_id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.modified_by_id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.deleted)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.deleted)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
